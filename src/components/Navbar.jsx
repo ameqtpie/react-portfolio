@@ -29,7 +29,14 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 bg-black text-white px-4 fixed">
       <div>
-        <h1 className="text-3xl md:text-5xl font-signature ml-2">Portfolio</h1>
+        <h1 className="group hover:cursor-pointer text-1xl md:text-2xl ml-2">
+          <span className="group-hover:text-gray-500 duration-200 block font-bold leading-[10px] ">
+            ASPIRING
+          </span>
+          <span className="group-hover:text-gray-500 duration-200 leading-[10px]">
+            Web Developer
+          </span>
+        </h1>
       </div>
       <ul className="hidden md:flex ">
         {links.map(({ id, link }) => (
